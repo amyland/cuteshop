@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace CuteShop.Model.Models
 {
     [Table("DonHang")]
-    class DonHangs
+    public class DonHangs
     {
         [Key]
         public string MaHDBan { set; get; }
@@ -19,6 +19,7 @@ namespace CuteShop.Model.Models
 
         [ForeignKey("MaHang")]
         public virtual LoaiHangs LoaiHangs { set; get; }
+
         [Required]
         public string MaNV { set; get; }
 
@@ -26,13 +27,13 @@ namespace CuteShop.Model.Models
         public virtual NhanViens NhanViens { set; get; }
 
         [Required]
-        public float? SoLuong { set; get; }
+        public float SoLuong { set; get; }
 
         [Required]
-        public float? DonGia { set; get; }
+        public float DonGia { set; get; }
 
         [Required]
-        public float? ThanhTien { set; get; }
+        public float ThanhTien { set; get; }
 
         [Required]
         public string MaKH { set; get; }

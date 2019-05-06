@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace CuteShop.Model.Models
 {
     [Table ("LoaiHang")]
-    class LoaiHangs
+    public class LoaiHangs
     {
         [Key]
         public string MaHang { set; get; }
@@ -24,12 +24,12 @@ namespace CuteShop.Model.Models
         public string TenHang { set; get; }
 
         [Required]
-        public float? SoLuong { set; get; }
+        public float SoLuong { set; get; }
 
         [Required]
-        public float? DonGiaNhap { set; get; }
+        public float DonGiaNhap { set; get; }
 
         [Required]
-        public float? DonGiaBan { set; get; }
+        public float DonGiaBan { set; get; }
     }
 }

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace CuteShop.Model.Models
 {
     [Table ("NhatKyHT")]
-    class NhatKyHTs
+    public class NhatKyHTs
     {
         [Key]
         public string MaHDBan { set; get; }
@@ -27,6 +27,6 @@ namespace CuteShop.Model.Models
         public DateTime? NgayBan { set; get; }
 
         [Required]
-        public float? TongTien { set; get; }
+        public float TongTien { set; get; }
     }
 }

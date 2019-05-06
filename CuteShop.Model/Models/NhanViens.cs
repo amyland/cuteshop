@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace CuteShop.Model.Models
 {
     [Table ("NhanVien")]
-    class NhanViens
+    public class NhanViens
     {
         [Key]
         public string MaNV { set; get; }
@@ -30,6 +30,6 @@ namespace CuteShop.Model.Models
         public string DienThoai { set; get; }
 
         [Required]
-        public bool? Statuss { set; get; }
+        public bool Statuss { set; get; }
     }
 }
